@@ -13,4 +13,4 @@ RUN pip3 install numpy
 RUN pip3 install scipy
 
 
-CMD [ "python", "./your-daemon-or-script.py" ]
+CMD [ "python", "/app/parser/json-processor.py" ]
