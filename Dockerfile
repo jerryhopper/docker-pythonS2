@@ -7,7 +7,7 @@ RUN pip3 install redis
 RUN pip3 install pdo
 RUN pip3 install cassandra-driver
 RUN pip3 install elasticsearch
-RUN pip3 install MySQL-python
+RUN pip3 install mysql-python
 RUN pip3 install numpy
 RUN pip3 install scipy
 
