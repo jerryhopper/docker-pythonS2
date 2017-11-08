@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 
-RUN apk add --update --no-cache postgresql-dev
+RUN apk add --update --no-cache postgresql-dev gcc python3-dev musl-dev
 
 RUN pip3 install s2sphere
 RUN pip3 install pymongo
