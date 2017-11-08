@@ -7,6 +7,7 @@ RUN pip3 install redis
 RUN pip3 install pdo
 RUN pip3 install cassandra-driver
 RUN pip3 install elasticsearch
+RUN apk add postgresql-dev
 RUN pip3 install psycopg2
 
 
