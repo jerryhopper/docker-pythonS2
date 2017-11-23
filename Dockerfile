@@ -11,6 +11,7 @@ RUN pip3 install cassandra-driver
 RUN pip3 install elasticsearch
 RUN pip3 install pytz
 RUN pip3 install psycopg2
+RUN pip3 install requests
 
 
 CMD [ "python", "/app/parser/json-processor.py" ]
