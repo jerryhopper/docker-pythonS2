@@ -12,7 +12,8 @@ RUN pip3 install elasticsearch
 RUN pip3 install pytz
 RUN pip3 install psycopg2
 RUN pip3 install requests
-RUN pip3 install rdflib
+RUN pip3 install crate
+
 
 
 CMD [ "python", "/app/parser/json-processor.py" ]
