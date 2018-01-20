@@ -13,7 +13,7 @@ RUN pip3 install pytz
 RUN pip3 install psycopg2
 RUN pip3 install requests
 RUN pip3 install crate
-RUN pip3 install bz2
+RUN pip3 install bz2file
 
 
 
