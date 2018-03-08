@@ -2,7 +2,7 @@ FROM python:3.6-alpine
 
 # Install redis
 RUN echo "http://dl-4.alpinelinux.org/alpine/v3.1/main" >> /etc/apk/repositories && \
-    apk add --update redis=2.8.23-r0 && \
+    apk add --update redis=redis-3.2.11-r0 && \
     rm -rf /var/cache/apk/* && \
     mkdir /data && \
     chown -R redis:redis /data && \
