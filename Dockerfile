@@ -1,5 +1,16 @@
 FROM python:3.6-alpine
+# Install redis
+RUN echo "http://dl-4.alpinelinux.org/alpine/v3.1/main" >> /etc/apk/repositories && \
+    apk add --update redis=4.0.8-r0 && \
+    rm -rf /var/cache/apk/* && \
+    mkdir /data && \
+    chown -R redis:redis /data && \
+    echo -e "include /etc/redis-local.conf\n" >> /etc/redis.conf
 
+# Add the files
+ADD root /
+
+VOLUME ["/data"]
 RUN apk add --update --no-cache postgresql-dev gcc python3-dev musl-dev
 
 RUN pip3 install s2sphere
